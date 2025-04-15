@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav id="navbar">
+        <header>JavaScript Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Setup_and_Installation">Setup and Installation</a></li>
+            <li><a class="nav-link" href="#Syntax_and_Variables">Syntax and Variables</a></li>
+            <li><a class="nav-link" href="#Functions_and_Scope">Functions and Scope</a></li>
+            <li><a class="nav-link" href="#Events_and_DOM">Events and DOM</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>JavaScript is a high-level, interpreted programming language that allows developers to create dynamic and interactive web content.</p>
+            <p>It is widely used for web development, alongside HTML and CSS.</p>
+            <ul>
+                <li>Client-side scripting</li>
+                <li>Server-side scripting (Node.js)</li>
+                <li>Supports object-oriented programming</li>
+            </ul>
+            <code>console.log("Hello, JavaScript!");</code>
+        </section>
+
+        <section class="main-section" id="Setup_and_Installation">
+            <header>Setup and Installation</header>
+            <p>JavaScript runs in web browsers, so no installation is required.</p>
+            <p>To include JavaScript in an HTML file, use the <script> </script> tag.</p>
+           <pre> <code> &lt;script&gt;
+    alert("Welcome to JavaScript!");
+&lt;/script&gt; </code> </pre>
+            <ul>
+                <li>Use an external JavaScript file</li>
+                <li>Include scripts in the HTML file</li>
+                <li>Load scripts asynchronously</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Syntax_and_Variables">
+            <header>Syntax and Variables</header>
+            <p>JavaScript uses a simple syntax with variables, functions, and operators.</p>
+            <p>There are three ways to declare variables:</p>
+            <ul>
+                <li>let (block-scoped, preferred)</li>
+                <li>const (constant values)</li>
+                <li>var (function-scoped, legacy)</li>
+            </ul>
+            <pre><code>// Declaring variables
+let name = "Mahesh";
+const age = 21;
+var city = "Dhankuta";</code></pre>
+        </section>
+
+        <section class="main-section" id="Functions_and_Scope">
+            <header>Functions and Scope</header>
+            <p>Functions allow code reuse and modular programming.</p>
+            <p>They can be declared using function expressions or arrow functions.</p>
+            <pre><code>// Function Declaration
+function greet(name) {
+    return "Hello, " + name;
+}
+
+// Arrow Function
+const add = (a, b) => a + b;</code></pre>
+            <ul>
+                <li>Functions can return values</li>
+                <li>Functions can accept parameters</li>
+                <li>Arrow functions provide concise syntax</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Events_and_DOM">
+            <header>Events and DOM</header>
+            <p>JavaScript can manipulate the Document Object Model (DOM) to make web pages interactive.</p>
+            <p>Event listeners handle user actions like clicks, key presses, and form submissions.</p>
+            <pre><code>// Selecting an element
+const button = document.querySelector("button");
+
+// Adding an event listener
+button.addEventListener("click", function() {
+    alert("Button clicked!");
+});</code></pre>
+            <ul>
+                <li>Modify HTML content dynamically</li>
+                <li>Change CSS styles using JavaScript</li>
+                <li>Add event listeners for user interactions</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>

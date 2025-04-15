@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-form</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title"> Welcome to the Bhaktapur Festival 2024</h1>
+  <p id="description">Thank you for taking the time to know about our festival !!</p>
+  <form id="survey-form">
+    <fieldset class="any">
+    <label id="name-label" for="name">Name:<input class="cat" id="name" type="text" placeholder="eg:Mahesh Shrestha" required/></label><br>
+    <label id="email-label" for="email">Email:<input class="cat"  id="email" type="email" placeholder="example@gmail.com" required></label><br>
+   <label id="number-label" for="number">Age: <input class="cat"  id="number" type="number" min="10" max="100" placeholder="100"></label><br>  </fieldset>
+     <fieldset class="dog">
+   <legend>Would you recommend Bhaktapur Festival to a friend? </legend>
+   <label>Yes <input type="radio" value="sure" name="recommendation option" ></label>
+ <label>No <input type="radio" value="never" name="recommendation option"><label>
+ </fieldset>
+   <fieldset>  <label for="referrer">How did you hear about us?
+    <select id="dropdown" name="referrer">
+      <option value="">(select one)</option>
+      <option value="1">Bhaktapur Facebook page</option>
+      <option value="2">Bhaktapur YouTube Channel</option>
+      <option value="3">Through your friend</option>
+      <option value="4">Other</option>
+    </select>
+  </label>
+     </fieldset>
+     <fieldset class="dog"><legend>What would you like to see improved? (Check all that apply)</legend>
+      <label>Newari Culture and traditions <input type="checkbox" value="front code"></label>
+      <label> Management of the festival<input type="checkbox" value="back code"></label>
+       </fieldset>
+       <fieldset>
+         <label id="feedback">Opinion:</label><textarea placeholder="Leave your feedback"></textarea></fieldset>
+         <input id="submit" name="submit" type="submit" >
+    </form>
+  </body>

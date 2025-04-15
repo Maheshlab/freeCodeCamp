@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #f4f4f4;
+}
+
+/* Sidebar Navigation */
+#sidebar {
+    width: 250px;
+    background: #222;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase ;
+    letter-spacing: 0.1rem;
+    color: blue;
+    transition: background-color 0.3s;
+    position: relative;
+  }
+  
+#sidebar h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 15px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background: #444;
+}
+
+/* Main Content */
+#content {
+    margin-left: 270px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+/* Section Styling */
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Code Blocks */
+pre {
+    background: #222;
+    color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+
+    #content {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    #sidebar ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    #sidebar ul li {
+        display: inline;
+    }
+}
